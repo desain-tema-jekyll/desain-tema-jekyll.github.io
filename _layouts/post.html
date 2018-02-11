@@ -43,16 +43,18 @@
 			{% assign postingan_selanjutnya_1 = angka_postingan | modulo: site.posts.size %}
 			{% assign postingan_selanjutnya_2 = angka_postingan | modulo: site.posts.size | plus: 1 %}
 			{% assign postingan_selanjutnya_3 = angka_postingan | modulo: site.posts.size | plus: 2 %}
-			{% assign postingan_selanjutnya_4 = angka_postingan | modulo: site.posts.size | plus: 3%}
+			{% assign postingan_selanjutnya_4 = angka_postingan | modulo: site.posts.size | plus: 3 %}
+			{% assign postingan_selanjutnya_5 = angka_postingan | modulo: site.posts.size | plus: 4 %}
+			{% assign postingan_selanjutnya_6 = angka_postingan | modulo: site.posts.size | plus: 5 %}
 			<div>
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="row">
-							<a href="#">
+							<a href="{{ site.posts[postingan_selanjutnya_1].url }}">
 								<div class="col-xs-4" style="padding-right: 5px;">
-									<img src="https://4.bp.blogspot.com/-mQmDo3farIM/WnpVn_7_pPI/AAAAAAAAJUQ/oR9L1UMKpIocFXytfDUEKp8a64lV034TgCLcBGAs/w310-h230-c/Kue-Keranjang.jpg" style="width: 100%;">
+									<img src="{{ site.posts[postingan_selanjutnya_1].gambar }}" style="width: 100%;">
 								</div>
-								<div class="col-xs-8" style='padding-left: 5px;'>Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul </div>
+								<div class="col-xs-8" style='padding-left: 5px;'>{{ site.posts[postingan_selanjutnya_1].title }}</div>
 							</a>
 						</div>
 						<br>
