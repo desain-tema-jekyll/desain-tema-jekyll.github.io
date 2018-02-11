@@ -28,8 +28,12 @@
 				<p>{{ content }}</p>
 				<p>
 					<div class="row">
-						<div class="col-sm-6"></div>
-						<div class="col-sm-6"></div>
+						<div class="col-sm-6">
+							<a href="https://api.whatsapp.com/send?phone=6281545143654&text=*Link*%3A%20{{ site.url }}{{ page.url }}%0A%0A*Komentar*%3A%0A" class="btn btn-default" style="background: rgb(76, 175, 80); color: white;">Komentar WA</a>
+						</div>
+						<div class="col-sm-6">
+							<a href="mailto:muhzaini30@gmail.com?subject=Komentar%20Blog%3A%20{{ page.title }}&body=Link%3A%20{{ site.url }}{{ page.url }}%0A%0AKomentar%3A%0A." class="btn btn-default" style="background: rgb(244, 67, 54); color: white;">Komentar Email</a>
+						</div>
 					</div>
 				</p>
 			</div>
