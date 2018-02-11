@@ -38,3 +38,30 @@ a {
 .arab {
 	font-size: 20px;
 }
+
+.kotak-1 {
+	overflow: hidden;
+    position: relative;
+	/* change these 2 values to adjust the size relative to its parent */
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+.kotak-2 {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align:center;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.kotak-1 .kotak-2 img {
+	min-width: 100%;
+    min-height: 100%;
+    margin: 0 -9999px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
