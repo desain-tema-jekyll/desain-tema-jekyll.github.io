@@ -1,26 +1,71 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Zen</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<link rel="stylesheet" type="text/css" href="bin/bootstrap/css/bootstrap.min.css">
-	</head>
-	<body>
-		<div class="jumbotron" style="background: url('https://scontent.fupg2-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/25659761_1756993830991132_7641777192683014786_n.jpg?efg=eyJpIjoiYiJ9&_nc_eui2=v1%3AAeEMooN_EXKpKBCIvFR684h5PYXvkdC8JJPnf_-STYNsg3_KCB3D9rKlX2e-Wjn7NQw7DKIEXeBmsoLXMCh8RSO4RiltgnGxRpZvxmgZQoLBq1vqOnoKc2qMyNWryOWJkX0&oh=969648beeb7562decc47721f9d00b339&oe=5B193C79'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-			<br>
-			<h1 class="text-center" style="color: white;">Zen</h1>
-			<br>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-8">
-					<p>Hello World</p>
-				</div>
-				<div class="col-sm-4">
-					<p>Hello World</p>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  {% assign post_url = post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url | %}
+  <article class="post">
+
+    {% if post.banner_image %}
+    <div class="banner-image">
+      <a href="{{ post_url }}"
+        title="{{ post.title }}">
+      <img 
+          src="{{ "/assets/images/" | append: post.banner_image | prepend: site.baseurl | prepend: site.url }}" 
+          alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}">
+      </a>
+    </div>
+    {% endif %}
+
+    <h1 class="post-title">
+      <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url |  }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <p class="post-meta">
+    {% if (post.categories.size > 0 %}
+      <span class="categories">
+      {{ post.categories | array_to_sentence_string }}
+      </span> |
+    {% endif %}
+    <span class="post-date">
+    {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}  
+    </span>
+    </p>
+
+    {{ post.excerpt }}
+    <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url |  }}">
+      Continue reading »
+    </a>
+  </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  
+  {% if paginator.next_page %}
+      <a class="pagination-item older btn" href="{{ paginator.next_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">Older</a>    
+  {% else %}
+    <span class="pagination-item older btn-disabled">Older</span>
+  {% endif %}
+  
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer btn " href="{{ paginator.previous_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer btn-disabled">Newer</span>
+  {% endif %}  
+  
+</div>
+{% endif %}
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "{{ '' | prepend: site.baseurl | prepend: site.url | append: '/' }}"
+    }
+}
+</script>
