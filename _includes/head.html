@@ -27,12 +27,12 @@
 {% endif %}
 {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ site.url }}/about/" property="article:author">
+  <meta content="{{ site.url }}/2018/01/13/about-me.html" property="article:author">
 {% endif %}
-{% if page.featured-image %}
-  <meta content="{{ site.url }}/{{ page.featured-image }}" property="og:image">
+{% if page.gambar %}
+  <meta content="{{ page.gambar }}" property="og:image">
 {% else %}
-  <meta content="{{ site.url }}/assets/images/medium-images/main-site-image.jpg" property="og:image">
+  <meta content="{{ site.gambar }}" property="og:image">
 {% endif %}
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
