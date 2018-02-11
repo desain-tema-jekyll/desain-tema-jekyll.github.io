@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Seorang mahasiswa psikologi.
   Suka koding.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://desain-tema-jekyll.github.io" # the base hostname & protocol for your site
+url: "https://desain-tema-jekyll.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Zen"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
