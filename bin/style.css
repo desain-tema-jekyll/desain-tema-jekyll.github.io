@@ -38,3 +38,17 @@ a {
 .arab {
 	font-size: 20px;
 }
+
+.gambar-kotak {
+	width:100%;
+    padding-bottom:100%;
+    overflow:hidden;
+    position:relative;
+}
+
+.gambar-kotak img {
+	position:absolute;
+   width:auto;
+    min-width:100%;
+    min-height:100%;
+}
