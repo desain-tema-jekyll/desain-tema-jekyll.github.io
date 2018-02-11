@@ -37,16 +37,74 @@
 				</div>
 			</div>
 			<br>
+			{% assign random = site.time | date: "%s" %}
+			{% assign acak_judul = page.title | size %}
+			{% assign angka_postingan = page.date | date: "%s" | plus: random | plus: acak_judul %}
+			{% assign postingan_selanjutnya_1 = angka_postingan | modulo: site.posts.size %}
+			{% assign postingan_selanjutnya_2 = angka_postingan | modulo: site.posts.size | plus: 1 %}
+			{% assign postingan_selanjutnya_3 = angka_postingan | modulo: site.posts.size | plus: 2 %}
+			{% assign postingan_selanjutnya_4 = angka_postingan | modulo: site.posts.size | plus: 3%}
 			<div>
 				<div class="row">
-					<a href="#">
-						<div class="col-xs-4" style="padding-right: 5px;">
-							<img src="https://s25.postimg.org/dk6m9fbof/Picture1.png" style="width: 100%;">
+					<div class="col-sm-6">
+						<div class="row">
+							<a href="#">
+								<div class="col-xs-4">
+									<img src="https://4.bp.blogspot.com/-mQmDo3farIM/WnpVn_7_pPI/AAAAAAAAJUQ/oR9L1UMKpIocFXytfDUEKp8a64lV034TgCLcBGAs/w310-h230-c/Kue-Keranjang.jpg" style="width: 100%;">
+								</div>
+								<div class="col-xs-8">Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul </div>
+							</a>
 						</div>
-						<div class="col-xs-8" style="padding-left: 5px;">Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul</div>
-					</a>
+						<br>
+						<div class="row">
+							<a href="#">
+								<div class="col-xs-4">
+									<img src="https://4.bp.blogspot.com/-mQmDo3farIM/WnpVn_7_pPI/AAAAAAAAJUQ/oR9L1UMKpIocFXytfDUEKp8a64lV034TgCLcBGAs/w310-h230-c/Kue-Keranjang.jpg" style="width: 100%;">
+								</div>
+								<div class="col-xs-8">Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul </div>
+							</a>
+						</div>
+						<br>
+						<div class="row">
+							<a href="#">
+								<div class="col-xs-4">
+									<img src="https://4.bp.blogspot.com/-mQmDo3farIM/WnpVn_7_pPI/AAAAAAAAJUQ/oR9L1UMKpIocFXytfDUEKp8a64lV034TgCLcBGAs/w310-h230-c/Kue-Keranjang.jpg" style="width: 100%;">
+								</div>
+								<div class="col-xs-8">Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul </div>
+							</a>
+						</div>
+						<br>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<a href="#">
+								<div class="col-xs-4">
+									<img src="https://4.bp.blogspot.com/-mQmDo3farIM/WnpVn_7_pPI/AAAAAAAAJUQ/oR9L1UMKpIocFXytfDUEKp8a64lV034TgCLcBGAs/w310-h230-c/Kue-Keranjang.jpg" style="width: 100%;">
+								</div>
+								<div class="col-xs-8">Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul </div>
+							</a>
+						</div>
+						<br>
+						<div class="row">
+							<a href="#">
+								<div class="col-xs-4">
+									<img src="https://4.bp.blogspot.com/-mQmDo3farIM/WnpVn_7_pPI/AAAAAAAAJUQ/oR9L1UMKpIocFXytfDUEKp8a64lV034TgCLcBGAs/w310-h230-c/Kue-Keranjang.jpg" style="width: 100%;">
+								</div>
+								<div class="col-xs-8">Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul </div>
+							</a>
+						</div>
+						<br>
+						<div class="row">
+							<a href="#">
+								<div class="col-xs-4">
+									<img src="https://4.bp.blogspot.com/-mQmDo3farIM/WnpVn_7_pPI/AAAAAAAAJUQ/oR9L1UMKpIocFXytfDUEKp8a64lV034TgCLcBGAs/w310-h230-c/Kue-Keranjang.jpg" style="width: 100%;">
+								</div>
+								<div class="col-xs-8">Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul Judul </div>
+							</a>
+						</div>
+						<br>
+					</div>
 				</div>
-				<br>
 			</div>
 		</div>
 		<div class="col-sm-4">
