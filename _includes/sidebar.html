@@ -1,5 +1,3 @@
----
----
 <div>
 	<h1 style="color: rgb(255, 152, 0);">Tentangku</h1>
 	<div class="embed-container">
@@ -34,7 +32,7 @@
 	<a href="/2018/01/23/kerja-sama.html" class="btn btn-default" style="background: rgb(3, 169, 244); color: white;">Saya ingin bekerja sama</a>
 </div>
 <div>
-	<h1>Tulisan Terbaru</h1>
+	<h1 style="color: rgb(61, 90, 254);">Tulisan Terbaru</h1>
 	{% for post in site.posts | limit: 5 %}
 	<div class="row">
 		<a href="{{ post.url }}">
@@ -46,5 +44,5 @@
 	</div>
 	<br>
 	{% endfor %}
-	<a href="/archives/" class="btn btn-default">Lihat semua tulisan</a>
+	<a href="/archives/" class="btn btn-default" style="background: rgb(156, 39, 176); color: white;">Lihat semua tulisan</a>
 </div>
