@@ -43,7 +43,7 @@ a {
 	float:left;
     position: relative;
     width: 100%;
-    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    padding-bottom : 67%; /* = width for a 1:1 aspect ratio */
     margin:1.66%;
     background-position:center center;
     background-repeat:no-repeat;
