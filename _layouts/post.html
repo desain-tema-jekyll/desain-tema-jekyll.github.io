@@ -6,8 +6,11 @@ layout: default
   {% if page.banner_image %}
   <div class="banner-image">
     <img 
+        src="{{ page.gambar }}" 
+        alt="{{ page.banner_image_alt }}"><!-- 
+    <img 
         src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}" 
-        alt="{{ page.banner_image_alt }}">
+        alt="{{ page.banner_image_alt }}"> -->
   </div>
   {% endif %}
 
