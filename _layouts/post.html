@@ -1,1 +1,41 @@
-{{ content }}
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="/bin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bin/style.css">
+</head>
+<body>
+<div class="container">
+	<div>
+		<h1 class="text-center">
+			<a href='/' style="text-decoration: none; color: rgb(156, 39, 176);">Zen</a>
+		</h1>
+		<hr style="border-color: rgb(0, 188, 212);">
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div>
+				<h1 style="color: rgb(0, 188, 212);">
+					<a href='{{ site.url }}{{ post.url }}' style="text-decoration: none;">{{ post.title }}</a>
+				</h1>
+				<p><img src="{{ post.gambar }}" style="width: 100%;"></p>
+				<p>{{ post.excerpt }}</p>
+				<p>
+					<a href="{{ site.url }}{{ post.url }}" class="btn btn-default" style="background: rgb(76, 175, 80); color: white;">Lanjutkan Membaca</a>
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			{% include sidebar.html %}
+		</div>
+	</div>
+</div>
+<br>
+</body>
+</html>
