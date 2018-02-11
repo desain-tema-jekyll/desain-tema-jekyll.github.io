@@ -7,16 +7,13 @@ layout: default
   {% assign post_url = post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url | %}
   <article class="post">
 
-    {% if post.banner_image %}
+    {% if post.gambar %}
     <div class="banner-image">
       <a href="{{ post_url }}"
         title="{{ post.title }}">
       <img 
           src="{{ post.gambar }}" 
           alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}">
-      <!-- <img 
-          src="{{ "/assets/images/" | append: post.banner_image | prepend: site.baseurl | prepend: site.url }}" 
-          alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}"> -->
       </a>
     </div>
     {% endif %}
