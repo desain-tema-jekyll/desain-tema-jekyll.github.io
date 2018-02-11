@@ -1,3 +1,5 @@
+---
+---
 <div>
 	<h1 style="color: rgb(255, 152, 0);">Tentangku</h1>
 	<div class="embed-container">
@@ -33,4 +35,16 @@
 </div>
 <div>
 	<h1>Tulisan Terbaru</h1>
+	{% for post in site.posts | limit: 5 %}
+	<div class="row">
+		<a href="{{ post.url }}">
+			<div class="col-xs-4" style="padding-right: 5px;">
+				<div class="kotak" style="background-image: url({{ post.gambar }});" style="width: 100%;"></div>
+			</div>
+			<div class="col-xs-8" style='padding-left: 5px;'>{{ post.title }}</div>
+		</a>
+	</div>
+	<br>
+	{% endfor %}
+	<a href="/archives/" class="btn btn-default">Lihat semua tulisan</a>
 </div>
