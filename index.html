@@ -23,9 +23,9 @@
 			{% for post in paginator.posts %}
 			<div>
 				<h1 style="color: rgb(0, 188, 212);">
-					<a href='#' style="text-decoration: none;">Judul</a>
+					<a href='{{ site.url }}{{ post.url }}' style="text-decoration: none;">Judul</a>
 				</h1>
-				<p><img src="https://1.bp.blogspot.com/-qJASi6WrjaU/Wg_-T7R_FsI/AAAAAAAAL2g/UyF_J8yYQykViL_azUdT9ukEs4mChy9nQCLcBGAs/s1600/kurapika-kuruta.png"></p>
+				<p><img src="{{ post.gambar }}"></p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -33,13 +33,13 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<p>
-					<a href="#" class="btn btn-default" style="background: rgb(76, 175, 80); color: white;">Lanjutkan Membaca</a>
+					<a href="{{ site.url }}{{ post.url }}" class="btn btn-default" style="background: rgb(76, 175, 80); color: white;">Lanjutkan Membaca</a>
 				</p>
 			</div>
 			{% endfor %}
-				<p>
-					<a href="#" class="btn btn-default" style="background: rgb(13, 71, 161); color: white;">Next &rarr;</a>
-				</p>
+			<p>
+				<a href="#" class="btn btn-default" style="background: rgb(13, 71, 161); color: white;">Next &rarr;</a>
+			</p>
 		</div>
 		<div class="col-sm-4">
 			<div>
