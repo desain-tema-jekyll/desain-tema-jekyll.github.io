@@ -44,3 +44,27 @@
   <meta content="{{ tag }}" property="article:tag">
   {% endfor %}
 {% endif %}
+
+<!-- Twitter cards -->
+
+<meta name="twitter:site"    content="@mzaini30">
+<meta name="twitter:creator" content="@mzaini30">
+{% if page.title %}
+  <meta name="twitter:title"   content="{{ page.title | strip_html | remove: '"' }}">
+{% else %}
+  <meta name="twitter:title"   content="{{ site.title }}">
+{% endif %}
+
+{% if page.excerpt %}
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html | remove: '"' }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.gambar %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ page.gambar }}">
+{% else %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ site.gambar }}">
+{% endif %}
