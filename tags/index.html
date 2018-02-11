@@ -7,11 +7,6 @@ title: Label
 {% assign tags_list = site_tags | split:',' | sort %}
 
 <div>
-    <h1>
-        <a>{{ page.title }}</a>
-    </h1>
-    
-    <hr>
     
     <ul>
         {% for item in (0..site.tags.size) %}{% unless forloop.last %}
