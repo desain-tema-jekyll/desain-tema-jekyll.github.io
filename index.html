@@ -13,7 +13,7 @@ layout: default
         title="{{ post.title }}">
       <img 
           src="{{ post.gambar }}" 
-          alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}">
+          alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}" style="width: 100%;">
       </a>
     </div>
     {% endif %}
