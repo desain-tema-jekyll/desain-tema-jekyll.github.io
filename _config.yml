@@ -33,7 +33,7 @@ author:
   github                    : mzaini30
   youtube                   : # youtube-user-name
   stackoverflow             : # stackoverflow-user-name
-  disqus                    : dactl # your disqus site name
+  disqus                    : zen-4 # your disqus site name
   google_analytics          : # 'UA-XXXXXXXX-X'
   photo                     : "uploads/me2.png"
   photo2x                   : "uploads/me.png"
@@ -50,14 +50,14 @@ plugins:
   - jekyll-sitemap
 
 # Permalinks
-permalink                    : posts/:slug
+permalink                    : # posts/:slug
 
 # Posts
 excerpt_separator            : <!–-break-–>
 
 # Pagination
 paginate                     : 5
-paginate_path                : '/page-:num/'
+paginate_path                : # '/page-:num/'
 
 # Tags
 collections:
