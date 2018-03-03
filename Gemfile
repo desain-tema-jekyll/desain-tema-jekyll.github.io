@@ -1,10 +1,12 @@
-source "https://rubygems.org"
+# faster gems source for China
+source 'http://gems.ruby-china.org/'
 
-gem "jekyll", "~> 3.0"
-gem "rouge", "~> 1.0"
+# gems source for the rest
+# source 'https://rubygems.org/'
 
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-paginate"
-  gem "jekyll-sitemap"
-end
+gemspec
+
+# For dev under windows, I know that yikes....
+
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+# gem 'wdm', '>= 0.1.0' if Gem.win_platform?
