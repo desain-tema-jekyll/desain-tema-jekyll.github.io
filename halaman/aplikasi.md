@@ -15,11 +15,28 @@ date: 2018-03-03 14:57:00
 	Menampilkan 7 jenis kaligrafi berdasarkan tulisan yang kamu tuliskan.
 
 - [Materialize Color](https://play.google.com/store/apps/details?id=com.mzaini30.materializecolor)
+
+	Kumpulan warna pastel yang berguna untuk referensi desainmu.
+
 - [Psikologi Universitas Mulawarman](https://play.google.com/store/apps/details?id=com.mzaini30.psikologiuniversitasmulawarman)
+
+	Aplikasi official program studi Psikologi Universitas Mulawarman yang bermanfaat buat mahasiswa, dosen, dan masyarakat.
+
 - [Puasa 2018](https://play.google.com/store/apps/details?id=com.mzaini30.puasa2018)
+
+	Jadwal puasa tahun 2018.
+
 - [Seindah Sunnah](https://play.google.com/store/apps/details?id=com.mzaini30.seindahsunnah)
+
+	Aplikasi android untuk website Seindah Sunnah yang berisi tentang tsaqafah islamiyah.
+
 - [Sekolah Impian](https://play.google.com/store/apps/details?id=com.mzaini30.sekolahimpian)
+
+	Seperti apa sekolah impian? Download aplikasinya.
+
 - [Zen](https://play.google.com/store/apps/details?id=com.mzaini30.zen)
+
+	Aplikasi android untuk preview blog Zen.
 
 # Web
 
