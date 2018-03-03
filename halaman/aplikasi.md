@@ -6,7 +6,20 @@ date: 2018-03-03 14:57:00
 
 # Android
 
+- [Font](https://play.google.com/store/apps/details?id=com.mzaini30.font)
 
+	Menampilkan berbagai jenis font berdasarkan teks yang kamu tuliskan.
+
+- [Kaligrafi](https://play.google.com/store/apps/details?id=com.mzaini30.kaligrafi)
+
+	Menampilkan 7 jenis kaligrafi berdasarkan tulisan yang kamu tuliskan.
+
+- [Materialize Color](https://play.google.com/store/apps/details?id=com.mzaini30.materializecolor)
+- [Psikologi Universitas Mulawarman](https://play.google.com/store/apps/details?id=com.mzaini30.psikologiuniversitasmulawarman)
+- [Puasa 2018](https://play.google.com/store/apps/details?id=com.mzaini30.puasa2018)
+- [Seindah Sunnah](https://play.google.com/store/apps/details?id=com.mzaini30.seindahsunnah)
+- [Sekolah Impian](https://play.google.com/store/apps/details?id=com.mzaini30.sekolahimpian)
+- [Zen](https://play.google.com/store/apps/details?id=com.mzaini30.zen)
 
 # Web
 
