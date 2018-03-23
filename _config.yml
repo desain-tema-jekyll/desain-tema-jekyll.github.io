@@ -23,7 +23,7 @@ penghargaan:
     tingkat: Prodi
   -
     tahun: 2014 
-    penghargaan: Finalis: Web Desain
+    penghargaan: 'Finalis: Web Desain'
     link: https://s25.postimg.org/oal5eau9r/Desain_web.jpg
     tingkat: Nasional
   -
@@ -105,4 +105,3 @@ penghargaan:
 # aplikasi android
 
 aplikasi_android:
-  
