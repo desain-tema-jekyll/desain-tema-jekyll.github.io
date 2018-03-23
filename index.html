@@ -136,31 +136,13 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-					      <td>2018</td>
-					      <td><a href="https://s25.postimg.org/shsyq8a6n/Scan352.jpg">Mahasiswa Berprestasi</a></td>
-					      <td>Prodi</td>
-					    </tr>
-					    <tr>
-					      <td>2017</td>
-					      <td><a href="https://s25.postimg.org/5gcdkhi8v/Scan351.jpg">Peserta: Sosialisasi 4 Pilar MPR RI</a></td>
-					      <td>Nasional</td>
-					    </tr>
-					    <tr>
-					      <td>2017</td>
-					      <td><a href="https://s25.postimg.org/8afixx4zj/Scan355.jpg">Panitia: Rakoornas ILMPI</a></td>
-					      <td>Nasional</td>
-					    </tr>
-					    <tr>
-					      <td>2016</td>
-					      <td><a href="https://s25.postimg.org/k1z9eqwf3/gambar_0002.jpg">Peserta: Workshop Grafologi</a></td>
-					      <td>Prodi</td>
-					    </tr>
-					    <tr>
-					      <td>2014</td>
-					      <td><a href="https://s25.postimg.org/oal5eau9r/Desain_web.jpg">Finalis: Web Desain</a></td>
-					      <td>Nasional</td>
-					    </tr>
+						{% for penghargaan in site.penghargaan %}
+							<tr>
+						      <td>{{ penghargaan.tahun }}</td>
+						      <td><a href="{{ penghargaan.link }}">{{ penghargaan.judul }}</a></td>
+						      <td>{{ penghargaan.tingkat }}</td>
+						    </tr>
+					    {% endfor %}
 					</tbody>
 				</table>		        
 		      </div>
@@ -182,26 +164,13 @@
 		      </div>
 		      <div class="modal-body">
 				<div class="row">
-					<div class="col-sm-3 col-xs-6">
-						<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-							<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-						</a>
-					</div>
-					<div class="col-sm-3 col-xs-6">
-						<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-							<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-						</a>
-					</div>
-					<div class="col-sm-3 col-xs-6">
-						<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-							<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-						</a>
-					</div>
-					<div class="col-sm-3 col-xs-6">
-						<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-							<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-						</a>
-					</div>
+					{% for aplikasi_android in site.aplikasi_android %}
+						<div class="col-sm-3 col-xs-6">
+							<a href="{{ aplikasi_android.link }}" class="thumbnail">
+								<img src="{{ aplikasi_android.gambar }}">
+							</a>
+						</div>
+					{% endfor %}
 				</div>        
 		      </div>
 		      <div class="modal-footer">
@@ -221,15 +190,11 @@
 		        <h4 class="modal-title" id="myModalLabel">Aplikasi Web</h4>
 		      </div>
 		      <div class="modal-body">
-				<a href="http://muhammadzaini.com/font" class="thumbnail">
-					<img src="https://s25.postimg.org/4vvgoyr3z/Screenshot_from_2018-02-02_14_44_14.png">
-				</a>
-				<a href="http://muhammadzaini.com/font" class="thumbnail">
-					<img src="https://s25.postimg.org/4vvgoyr3z/Screenshot_from_2018-02-02_14_44_14.png">
-				</a>
-				<a href="http://muhammadzaini.com/font" class="thumbnail">
-					<img src="https://s25.postimg.org/4vvgoyr3z/Screenshot_from_2018-02-02_14_44_14.png">
-				</a>
+				{% for aplikasi_web in site.aplikasi_web %}
+					<a href="{{ aplikasi_web.link }}" class="thumbnail">
+						<img src="{{ aplikasi_web.gambar }}">
+					</a>
+				{% endfor %}
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
