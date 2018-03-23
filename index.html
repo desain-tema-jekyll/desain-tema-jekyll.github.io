@@ -48,7 +48,7 @@
 					{% for penghargaan in site.penghargaan | limit: 5 %}
 						<tr>
 					      <td>{{ penghargaan.tahun }}</td>
-					      <td><a href="{{ penghargaan.link }}">{{ penghargaan.penghargaan }}</a></td>
+					      <td><a href="{{ penghargaan.link }}">{{ penghargaan.judul }}</a></td>
 					      <td>{{ penghargaan.tingkat }}</td>
 					    </tr>
 				    {% endfor %}
