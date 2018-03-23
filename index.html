@@ -65,26 +65,13 @@
 		<div class="section">
 			<p><strong>Aplikasi Android</strong></p>
 			<div class="row">
-				<div class="col-sm-3 col-xs-6">
-					<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-						<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-					</a>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-						<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-					</a>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-						<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-					</a>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<a href="https://play.google.com/store/apps/details?id=com.mzaini30.coffeescript" class="thumbnail">
-						<img src="https://s25.postimg.org/600rg1tin/Screenshot_2018-03-10-15-09-22.jpg">
-					</a>
-				</div>
+				{% for aplikasi_android in site.aplikasi_android | limit: 4 %}
+					<div class="col-sm-3 col-xs-6">
+						<a href="{{ aplikasi_android.link }}" class="thumbnail">
+							<img src="{{ aplikasi_android.gambar }}">
+						</a>
+					</div>
+				{% endfor %}
 			</div>
 			<p class="text-center">
 				<a href="#" class="btn btn-default" data-toggle='modal' data-target='#aplikasi-android'>Lihat aplikasi android lainnya</a>
@@ -96,15 +83,11 @@
 
 		<div class="section">
 			<p><strong>Aplikasi Web</strong></p>
-			<a href="http://muhammadzaini.com/font" class="thumbnail">
-				<img src="https://s25.postimg.org/4vvgoyr3z/Screenshot_from_2018-02-02_14_44_14.png">
-			</a>
-			<a href="http://muhammadzaini.com/font" class="thumbnail">
-				<img src="https://s25.postimg.org/4vvgoyr3z/Screenshot_from_2018-02-02_14_44_14.png">
-			</a>
-			<a href="http://muhammadzaini.com/font" class="thumbnail">
-				<img src="https://s25.postimg.org/4vvgoyr3z/Screenshot_from_2018-02-02_14_44_14.png">
-			</a>
+			{% for aplikasi_web in site.aplikasi_web % | limit: 3 %}
+				<a href="{{ aplikasi_web.link }}" class="thumbnail">
+					<img src="{{ aplikasi_web.gambar }}">
+				</a>
+			{% endfor %}
 			<p class="text-center">
 				<a href="#" class="btn btn-default" data-toggle='modal' data-target='#aplikasi-web'>Lihat aplikasi web lainnya</a>
 			</p>
