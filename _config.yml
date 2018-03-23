@@ -148,3 +148,27 @@ aplikasi_android:
 # aplikasi web
 
 aplikasi_web:
+  -
+    link: /font
+    gambar: https://s25.postimg.org/4vvgoyr3z/Screenshot_from_2018-02-02_14_44_14.png
+  -
+    link: /jumlah-satuan
+    gambar: https://s25.postimg.org/pav5ryxov/Screenshot_from_2018-02-20_00_20_37.png
+  -
+    link: /kaligrafi
+    gambar: https://s25.postimg.org/et6hi5w6n/Screenshot_from_2018-02-02_14_49_18.png
+  -
+    link: /kontest
+    gambar: https://s25.postimg.org/z1p9q3gdr/Screenshot_from_2018-02-02_09_21_26.png
+  -
+    link: /kontur
+    gambar: https://s25.postimg.org/mpvk3zru7/Screenshot_from_2018-02-02_16_46_04.png
+  -
+    link: /color30
+    gambar: https://s25.postimg.org/ormuqxitb/Screenshot_from_2018-02-02_09_29_56.png
+  -
+    link: /tambah-hari
+    gambar: https://s25.postimg.org/x0np8974v/Screenshot_from_2018-02-17_14_04_27.png
+  -
+    link: /wa
+    gambar: https://s25.postimg.org/4x0t4svvz/Screenshot_from_2018-02-02_09_27_13.png
