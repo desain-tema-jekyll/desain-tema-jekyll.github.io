@@ -1,3 +1,108 @@
+# penghargaan
+
 penghargaan:
   -
-    
+    tahun: 2018 
+    penghargaan: Mahasiswa Berprestasi
+    link: https://s25.postimg.org/shsyq8a6n/Scan352.jpg
+    tingkat: Prodi
+  -
+    tahun: 2017 
+    penghargaan: 'Peserta: Sosialisasi 4 Pilar MPR RI'
+    link: https://s25.postimg.org/5gcdkhi8v/Scan351.jpg
+    tingkat: Nasional
+  -
+    tahun: 2017 
+    Panitia: Rakoornas ILMPI
+    link: https://s25.postimg.org/8afixx4zj/Scan355.jpg
+    tingkat: Nasional
+  -
+    tahun: 2016 
+    penghargaan: 'Peserta: Workshop Grafologi'
+    link: https://s25.postimg.org/k1z9eqwf3/gambar_0002.jpg
+    tingkat: Prodi
+  -
+    tahun: 2014 
+    penghargaan: Finalis: Web Desain
+    link: https://s25.postimg.org/oal5eau9r/Desain_web.jpg
+    tingkat: Nasional
+  -
+    tahun: 2014 
+    penghargaan: 'Desain Terkreatif dan Inovatif: Web Desain'
+    link: https://s25.postimg.org/clzzszban/gambar_0004.jpg
+    tingkat: Nasional
+  -
+    tahun: 2013 
+    penghargaan: 'Juara 2: Lomba Blog'
+    link: https://s25.postimg.org/nyclarrpb/gambar_0006.jpg
+    tingkat: Eks Karisidenan Surakarta
+  -
+    tahun: 2012 
+    penghargaan: 'Peserta: Lomba Kimia'
+    link: https://s25.postimg.org/hww2b24tb/Kimia.jpg
+    tingkat: Eks Karisidenan Surakarta
+  -
+    tahun: 2012 
+    penghargaan: 'Juara 2: Pidato Bahasa Indonesia'
+    link: https://s25.postimg.org/qf5ifeyhb/Pidato_bahasa_indonesia_2.jpg
+    tingkat: Mahad
+  -
+    tahun: 2012 
+    penghargaan: 'Juara 2: Lomba Karya Tulis Ilmiah'
+    link: https://s25.postimg.org/3qz5iic8f/gambar_0009.jpg
+    tingkat: Mahad
+  -
+    tahun: 2012 
+    penghargaan: 'Juara 2: Karya Tulis'
+    link: https://s25.postimg.org/5v0ogx3an/Karya_tulis.jpg
+    tingkat: Mahad
+  -
+    tahun: 2012 
+    penghargaan: 'Juara 1: Cerdas Cermat'
+    link: https://s25.postimg.org/h7d9yntz3/Cerdas_cermat.jpg
+    tingkat: Mahad
+  -
+    tahun: 2011 
+    penghargaan: 'Peserta: Pidato Bahasa Indonesia'
+    link: https://s25.postimg.org/4fz3s6mrz/Pidato_bahasa_indonesia.jpg
+    tingkat: Eks Karisidenan Surakarta
+  -
+    tahun: 2010 
+    penghargaan: 'Juara Harapan 1: Asah Terampil Matematika'
+    link: https://s25.postimg.org/jcgh2fllr/gambar_0001.jpg
+    tingkat: Provinsi
+  -
+    tahun: 2010 
+    penghargaan: 'Juara 1: Lomba Blog'
+    link: https://s25.postimg.org/tzaa7v96n/gambar_0005.jpg
+    tingkat: Sekolah
+  -
+    tahun: 2009 
+    penghargaan: 'Peserta: Olimpiade Matematika'
+    link: https://s25.postimg.org/doa6bkrjz/gambar_0011.jpg
+    tingkat: Nasional
+  -
+    tahun: 2009 
+    penghargaan: 'Peserta: Asah Terampil Matematika'
+    link: https://s25.postimg.org/rupx6qa3z/gambar_0003.jpg
+    tingkat: Provinsi
+  -
+    tahun: 2008 
+    penghargaan: 'Juara 2: Lomba Pidato Bahasa Inggris'
+    link: https://s25.postimg.org/9f5g9c3pb/gambar_0010.jpg
+    tingkat: Kota
+  -
+    tahun: 2006 
+    penghargaan: 'Juara 1: Lomba Kaligrafi'
+    link: https://s25.postimg.org/fsujcn61b/gambar_0008.jpg
+    tingkat: Kota
+  -
+    tahun: 2004 
+    penghargaan: 'Juara 2: Lomba Hapalan Juz Amma'
+    link: https://s25.postimg.org/5vjijk3kf/gambar_0007.jpg
+    tingkat: Kota
+
+# aplikasi android
+
+aplikasi_android:
+  
