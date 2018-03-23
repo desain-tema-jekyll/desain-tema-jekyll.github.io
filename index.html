@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,31 +45,13 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-				      <td>2018</td>
-				      <td><a href="https://s25.postimg.org/shsyq8a6n/Scan352.jpg">Mahasiswa Berprestasi</a></td>
-				      <td>Prodi</td>
-				    </tr>
-				    <tr>
-				      <td>2017</td>
-				      <td><a href="https://s25.postimg.org/5gcdkhi8v/Scan351.jpg">Peserta: Sosialisasi 4 Pilar MPR RI</a></td>
-				      <td>Nasional</td>
-				    </tr>
-				    <tr>
-				      <td>2017</td>
-				      <td><a href="https://s25.postimg.org/8afixx4zj/Scan355.jpg">Panitia: Rakoornas ILMPI</a></td>
-				      <td>Nasional</td>
-				    </tr>
-				    <tr>
-				      <td>2016</td>
-				      <td><a href="https://s25.postimg.org/k1z9eqwf3/gambar_0002.jpg">Peserta: Workshop Grafologi</a></td>
-				      <td>Prodi</td>
-				    </tr>
-				    <tr>
-				      <td>2014</td>
-				      <td><a href="https://s25.postimg.org/oal5eau9r/Desain_web.jpg">Finalis: Web Desain</a></td>
-				      <td>Nasional</td>
-				    </tr>
+					{% for penghargaan in site.penghargaan | limit: 5 %}
+						<tr>
+					      <td>{{ penghargaan.tahun }}</td>
+					      <td><a href="{{ penghargaan.link }}">Mahasiswa Berprestasi</a></td>
+					      <td>Prodi</td>
+					    </tr>
+				    {% endfor %}
 				</tbody>
 			</table>
 			<p class="text-center">
