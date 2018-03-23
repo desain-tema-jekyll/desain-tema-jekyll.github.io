@@ -48,8 +48,8 @@
 					{% for penghargaan in site.penghargaan | limit: 5 %}
 						<tr>
 					      <td>{{ penghargaan.tahun }}</td>
-					      <td><a href="{{ penghargaan.link }}">Mahasiswa Berprestasi</a></td>
-					      <td>Prodi</td>
+					      <td><a href="{{ penghargaan.link }}">{{ penghargaan.penghargaan }}</a></td>
+					      <td>{{ penghargaan.tingkat }}</td>
 					    </tr>
 				    {% endfor %}
 				</tbody>
