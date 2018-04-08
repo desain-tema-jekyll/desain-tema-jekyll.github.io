@@ -364,9 +364,9 @@ layout: compress
 					<p><strong>Stay Connected</strong></p>
 					<ul>
 						{% assign kontak = site.stay_connected | sort: 'judul' %}
-						{% for bw in kontak %}
+						{% for contact in kontak %}
 							<li>
-								<a href="{{ bw.link }}">{{ bw.judul }}</a>
+								<a href="{{ contact.link }}">{{ contact.judul }}</a>
 							</li>
 						{% endfor %}
 					</ul>
