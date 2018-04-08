@@ -26,4 +26,8 @@ link:
   -
     judul: Email
     link: mailto:muhzaini30@gmail.com
-    icon: whatsapp
+    icon: envelope-o
+  -
+    judul: LINE
+    link: http://line.me/ti/p/~mzaini30
+    icon: heart-o
