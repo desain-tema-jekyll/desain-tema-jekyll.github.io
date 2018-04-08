@@ -64,7 +64,7 @@
                         {% assign links = site.link | sort: 'judul' %}
                         {% for tautan in links %}
                             <li>
-                                <a href="{{ tautan.link }}"><i class="fa fa-{{ tautan.icon }}"></i> {{ tautan.judul }}</a>
+                                <a href="{{ tautan.link }}" target="_blank"><i class="fa fa-{{ tautan.icon }}"></i> {{ tautan.judul }}</a>
                             </li>
                         {% endfor %}
                     </ul>
