@@ -24,6 +24,10 @@ link:
     link: https://api.whatsapp.com/send?phone=6281545143654
     icon: whatsapp
   -
+    judul: Aplikasi Web
+    link: '#!'
+    icon: globe
+  -
     judul: Email
     link: mailto:muhzaini30@gmail.com
     icon: envelope-o
