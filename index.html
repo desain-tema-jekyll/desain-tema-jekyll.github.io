@@ -21,16 +21,16 @@ index: oke
 </div>
 {% if paginator.total_pages > 1 %}
 	<nav aria-label="Page navigation">
-  		<ul class="pagination">
+  		<ul class="pager">
 			{% if paginator.previous_page %}
-				<li><a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">&laquo; Prev</a></li>
+				<li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">&laquo; Prev</a></li>
 			{% else %}
-				<li class="active"><a href="#!">&laquo; Prev</a></li>
+				<li class="previous active"><a href="#!">&laquo; Prev</a></li>
 			{% endif %}
 			{% if paginator.next_page %}
-				<li><a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Next &raquo;</a></li>
+				<li class="next"><a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Next &raquo;</a></li>
 			{% else %}
-				<li class="active"><a href='#!'>Next &raquo;</a></li>
+				<li class="next active"><a href='#!'>Next &raquo;</a></li>
 			{% endif %}
 		</ul>
 	</nav>
