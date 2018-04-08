@@ -58,13 +58,10 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li>
-                            
-                        </li>
                         {% assign links = site.link | sort: 'judul' %}
-                        {% for link in links %}
+                        {% for tautan in links %}
                             <li>
-                                <a href="http://facebook.com/mzaini30"><i class="fa fa-facebook-square"></i> Facebook</a>
+                                <a href="{{ tautan.link }}"><i class="fa fa-{{ tautan.icon }}"></i> {{ tautan.judul }}</a>
                             </li>
                         {% endfor %}
                     </ul>
