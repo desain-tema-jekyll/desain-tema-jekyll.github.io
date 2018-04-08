@@ -453,21 +453,20 @@ layout: compress
 		/*main kategori*/
 
 		$('.tampilkan-semua').click(function(){
-			$('.kategori').show();
+			$('.kategori').removeClass(`sembunyi`);
 		});
 		$('.sembunyikan-semua').click(function(){
-			$('.kategori').hide();
+			$('.kategori').addClass(`sembunyi`);
 		});
 		$('.menuju-kategori').click(function(){
-			$('.kategori').hide();
+			$('.kategori').addClass(`sembunyi`);
 		});
-		$('.kategori').hide();
 		{% if page.category %}
 			/*$('.kategori-{{ page.category | replace: ' ', '-' }}').show();*/
 		{% endif %}
 		{% for kategori in sort_kategori %}		
 			$('.menuju-kategori-{{ kategori | first | replace: ' ', '-' }}').click(function(){
-				$('.kategori-{{ kategori | first | replace: ' ', '-' }}').show();
+				$('.kategori-{{ kategori | first | replace: ' ', '-' }}').removeClass(`sembunyi`);
 			});
 		{% endfor %}
 
