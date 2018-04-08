@@ -186,7 +186,7 @@ layout: compress
 
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<a class="navbar-brand" href="/">Zen - Developer Ninja</a>
-		<a class="btn btn-default navbar-btn" href="/blog">Blog</a>
+		<!-- <a class="btn btn-default navbar-btn" href="/blog">Blog</a> -->
 	</nav>
 
 	<div class="section" style="height: 70px; width: 100%;"></div>
@@ -205,12 +205,14 @@ layout: compress
 			<div class="col-sm-8 content">
 				<div class="theiaStickySidebar">
 					<div class="telegram-body medium">
-						<p style="margin-top: 0;">
-							<img src="{% if page.gambar %}{{ page.gambar }}{% else %}{{ site.gambar }}{% endif %}">
-						</p>
-						<p class="text-center">
-							<a href="{% if page.gambar %}{{ page.gambar }}{% else %}{{ site.gambar }}{% endif %}">Sumber gambar</a>
-						</p>
+						{% if page.index == null %}
+							<p style="margin-top: 0;">
+								<img src="{% if page.gambar %}{{ page.gambar }}{% else %}{{ site.gambar }}{% endif %}">
+							</p>
+							<p class="text-center">
+								<a href="{% if page.gambar %}{{ page.gambar }}{% else %}{{ site.gambar }}{% endif %}">Sumber gambar</a>
+							</p>
+						{% endif %}
 						{{ content }}
 					</div>
 					<br>
