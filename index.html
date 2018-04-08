@@ -5,20 +5,16 @@ date: 2018-04-08 12:09:00
 index: oke
 ---
 
-{% assign random = site.time | date: "%s" %}
-{% assign acak_judul = page.title.size %}
-{% assign angka_postingan = page.date | date: "%s" | plus: random | plus: acak_judul %}
 <div class="row">
-	{% for i in (1..12) %}
-		{% assign postingan_selanjutnya = angka_postingan | plus: forloop.index0 | modulo: site.posts.size %}
+	{% for post in paginator.posts %}
 		<div class="col-sm-4 col-xs-6">
-			<a href="{{ site.posts[postingan_selanjutnya].url }}">
+			<a href="{{ post.url }}">
 				<!-- https://stackoverflow.com/questions/5445491/height-equal-to-dynamic-width-css-fluid-layout -->
 				<div class="cover-parent">
 					<div class="dummy"></div>
-					<div style="background-image: url('{% if site.posts[postingan_selanjutnya].gambar %}{{ site.posts[postingan_selanjutnya].gambar }}{% else %}{{ site.gambar }}{% endif %}');" class="cover"></div>
+					<div style="background-image: url('{% if post.gambar %}{{ post.gambar }}{% else %}{{ site.gambar }}{% endif %}');" class="cover"></div>
 				</div>
-				<p class="judul">{{ site.posts[postingan_selanjutnya].title }}</p>
+				<p class="judul">{{ post.title }}</p>
 			</a>
 		</div>
 	{% endfor %}
