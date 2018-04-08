@@ -404,7 +404,7 @@ layout: compress
 							<em><a href="#!" class="sembunyikan-semua">Sembunyikan Semua</a></em>
 						</li>
 					</ul>
-					<p><strong>Tulisan Lainnya</strong></p>
+					<p class="kategori sembunyi"><strong>Tulisan Lainnya</strong></p>
 					<ul>
 						{% for post in site.posts %}
 							<li{% if post.category %} class="sembunyi kategori kategori-{{ post.category | replace: ' ', '-' }}"{% endif %}>
