@@ -25,12 +25,12 @@ index: oke
 			{% if paginator.previous_page %}
 				<li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">&laquo; Prev</a></li>
 			{% else %}
-				<li class="previous active"><a href="#!">&laquo; Prev</a></li>
+				<!-- <li class="previous active"><a href="#!">&laquo; Prev</a></li> -->
 			{% endif %}
 			{% if paginator.next_page %}
 				<li class="next"><a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Next &raquo;</a></li>
 			{% else %}
-				<li class="next active"><a href='#!'>Next &raquo;</a></li>
+				<!-- <li class="next active"><a href='#!'>Next &raquo;</a></li> -->
 			{% endif %}
 		</ul>
 	</nav>
