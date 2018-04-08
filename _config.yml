@@ -15,3 +15,15 @@ link:
     judul: Play Store
     link: http://github.com/mzaini30
     icon: android
+  -
+    judul: Telegram
+    link: http://t.me/mzaini30a
+    icon: telegram
+  -
+    judul: Whatsapp
+    link: https://api.whatsapp.com/send?phone=6281545143654
+    icon: whatsapp
+  -
+    judul: Email
+    link: mailto:muhzaini30@gmail.com
+    icon: whatsapp
