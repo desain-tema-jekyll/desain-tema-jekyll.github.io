@@ -41,6 +41,16 @@ slot_iklan:
 
 gambar: https://img00.deviantart.net/e121/i/2017/198/c/2/fate_apocrypha_hd_wallpaper_by_tammypain-dbgp3hz.png
 
+# stay connected
+
+stay_connected:
+  -
+    judul: Github
+    link: http://github.com/mzaini30
+  -
+    judul: Facebook
+    link: http://facebook.com/mzaini30
+
 # blogwalking
 
 blogwalking:

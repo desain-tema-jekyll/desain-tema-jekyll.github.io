@@ -188,21 +188,7 @@ layout: compress
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 				<a class="navbar-brand" href="/">Zen - Developer Ninja</a>
-			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="#!">Aplikasi Android</a></li>
-					<li><a href="#!">Aplikasi Web</a></li>
-					<li><a href="#!">Penghargaan</a></li>
-				</ul>
 			</div>
 		</div>
 	</nav>
@@ -366,15 +352,6 @@ layout: compress
 							}
 						});
 					</script>
-					<p><strong>Stay Connected</strong></p>
-					<ul>
-						<li>
-							<a href="http://facebook.com/mzaini30">Facebook</a>
-						</li>
-						<li>
-							<a href="http://t.me/zensharing">Telegram</a>
-						</li>
-					</ul>
 					<p><strong>Edit</strong></p>
 					<ul>
 						<li>
@@ -383,6 +360,15 @@ layout: compress
 						<li>
 							<a href="https://github.com/mzaini30/mzaini30.github.io/edit/master/{{ page.path }}">Github</a>
 						</li>
+					</ul>
+					<p><strong>Stay Connected</strong></p>
+					<ul>
+						{% assign kontak = site.stay_connected | sort: 'judul' %}
+						{% for bw in kontak %}
+							<li>
+								<a href="{{ bw.link }}">{{ bw.judul }}</a>
+							</li>
+						{% endfor %}
 					</ul>
 					<p><strong>Blogwalking</strong></p>
 					<ul>
