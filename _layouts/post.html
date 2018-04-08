@@ -405,7 +405,7 @@ layout: compress
 							<em><a href="#!" class="sembunyikan-semua">Sembunyikan Semua</a></em>
 						</li>
 					</ul>
-					<p class="kategori sembunyi"><strong>Tulisan Lainnya</strong></p>
+					<p class="kategori kategori-judul sembunyi"><strong>Tulisan Lainnya</strong></p>
 					<ul>
 						{% for post in site.posts %}
 							<li{% if post.category %} class="sembunyi kategori kategori-{{ post.category | replace: ' ', '-' }}"{% endif %}>
@@ -468,6 +468,7 @@ layout: compress
 		{% for kategori in sort_kategori %}		
 			$('.menuju-kategori-{{ kategori | first | replace: ' ', '-' }}').click(function(){
 				$('.kategori-{{ kategori | first | replace: ' ', '-' }}').removeClass(`sembunyi`);
+				$(`.kategori-judul`).removeClass(`sembunyi`);
 			});
 		{% endfor %}
 
