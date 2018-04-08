@@ -25,11 +25,11 @@ index: oke
 			{% if paginator.previous_page %}
 				<li><a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">&laquo; Prev</a></li>
 			{% else %}
-				<li><span>&laquo; Prev</span></li>
+				<li class="active"><a href="#!">&laquo; Prev</a></li>
 			{% endif %}
 			{% for page in (1..paginator.total_pages) %}
 				{% if page == paginator.page %}
-					<li><em>{{ page }}</em></li>
+					<li class="active"><a href="#!">{{ page }}</a></li>
 				{% elsif page == 1 %}
 					<li><a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">{{ page }}</a></li>
 				{% else %}
@@ -39,7 +39,7 @@ index: oke
 			{% if paginator.next_page %}
 				<li><a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Next &raquo;</a></li>
 			{% else %}
-				<li><span>Next &raquo;</span></li>
+				<li class="active"><a href='#!'>Next &raquo;</a></li>
 			{% endif %}
 		</ul>
 	</nav>
