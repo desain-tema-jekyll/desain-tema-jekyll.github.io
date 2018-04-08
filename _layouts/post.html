@@ -204,7 +204,7 @@ layout: compress
 		<div class="row">
 			<div class="col-sm-8 content">
 				<div class="theiaStickySidebar">
-					<div class="telegram-body medium">
+					<div class="telegram-body{% if page.index == null %} medium{% endif %}">
 						{% if page.index == null %}
 							<p style="margin-top: 0;">
 								<img src="{% if page.gambar %}{{ page.gambar }}{% else %}{{ site.gambar }}{% endif %}">
