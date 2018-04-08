@@ -20,8 +20,8 @@ index: oke
 	{% endfor %}
 </div>
 {% if paginator.total_pages > 1 %}
-	<center>
-		<nav aria-label="Page navigation">
+	<nav aria-label="Page navigation">
+		<center>
 	  		<ul class="pagination">
 				{% if paginator.previous_page %}
 					<li><a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">&laquo; Prev</a></li>
@@ -43,6 +43,6 @@ index: oke
 					<li class="active"><a href='#!'>Next &raquo;</a></li>
 				{% endif %}
 			</ul>
-		</nav>
-	</center>
+		</center>
+	</nav>
 {% endif %}
