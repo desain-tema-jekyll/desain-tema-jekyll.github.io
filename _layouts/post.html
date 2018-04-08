@@ -459,7 +459,7 @@ layout: compress
 		});
 		$('.kategori').hide();
 		{% if page.category %}
-			$('.kategori-{{ page.category | replace: ' ', '-' }}').show();
+			/*$('.kategori-{{ page.category | replace: ' ', '-' }}').show();*/
 		{% endif %}
 		{% for kategori in sort_kategori %}		
 			$('.menuju-kategori-{{ kategori | first | replace: ' ', '-' }}').click(function(){
